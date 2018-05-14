@@ -1,0 +1,84 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/lib/node_modules/cnpm/node_modules/.bin/npm',
+1 verbose cli   '--userconfig=/Users/qcgm1978/.cnpmrc',
+1 verbose cli   '--disturl=https://npm.taobao.org/mirrors/node',
+1 verbose cli   '--cache=/Users/qcgm1978/.cnpm',
+1 verbose cli   '--registry=https://registry.npm.taobao.org',
+1 verbose cli   '--node-gyp=/usr/local/lib/node_modules/cnpm/node_modules/node-gyp/bin/node-gyp.js',
+1 verbose cli   'i',
+1 verbose cli   'https://github.com/mdn/simple-web-worker.git',
+1 verbose cli   '-D' ]
+2 info using npm@2.14.20
+3 info using node@v9.8.0
+4 verbose install initial load of /Users/qcgm1978/WebstormProjects/tfjs-models/package.json
+5 warn package.json tensorflow-models@0.0.1 No description
+6 warn package.json tensorflow-models@0.0.1 No repository field.
+7 verbose readDependencies loading dependencies from /Users/qcgm1978/WebstormProjects/tfjs-models/package.json
+8 silly cache add args [ 'https://github.com/mdn/simple-web-worker.git', null ]
+9 verbose cache add spec https://github.com/mdn/simple-web-worker.git
+10 silly cache add parsed spec Result {
+10 silly cache add   raw: 'https://github.com/mdn/simple-web-worker.git',
+10 silly cache add   scope: null,
+10 silly cache add   name: null,
+10 silly cache add   rawSpec: 'https://github.com/mdn/simple-web-worker.git',
+10 silly cache add   spec: 'git+https://github.com/mdn/simple-web-worker.git',
+10 silly cache add   type: 'hosted',
+10 silly cache add   hosted:
+10 silly cache add    { type: 'github',
+10 silly cache add      ssh: 'git@github.com:mdn/simple-web-worker.git',
+10 silly cache add      sshUrl: 'git+ssh://git@github.com/mdn/simple-web-worker.git',
+10 silly cache add      httpsUrl: 'git+https://github.com/mdn/simple-web-worker.git',
+10 silly cache add      gitUrl: 'git://github.com/mdn/simple-web-worker.git',
+10 silly cache add      shortcut: 'github:mdn/simple-web-worker',
+10 silly cache add      directUrl: 'https://raw.githubusercontent.com/mdn/simple-web-worker/master/package.json' } }
+11 verbose addRemoteGit caching https://github.com/mdn/simple-web-worker.git
+12 verbose addRemoteGit git+https://github.com/mdn/simple-web-worker.git is a repository hosted by github
+13 silly tryClone cloning git+https://github.com/mdn/simple-web-worker.git via git+https://github.com/mdn/simple-web-worker.git
+14 verbose tryClone https-github-com-mdn-simple-web-worker-git-34b48378 not in flight; caching
+15 verbose correctMkdir /Users/qcgm1978/.cnpm/_git-remotes correctMkdir not in flight; initializing
+16 info git [ 'config', '--get', 'remote.origin.url' ]
+17 silly validateExistingRemote git+https://github.com/mdn/simple-web-worker.git remote.origin.url: https://github.com/mdn/simple-web-worker.git
+18 verbose validateExistingRemote git+https://github.com/mdn/simple-web-worker.git is updating existing cached remote /Users/qcgm1978/.cnpm/_git-remotes/https-github-com-mdn-simple-web-worker-git-34b48378
+19 info git [ 'fetch', '-a', 'origin' ]
+20 verbose updateRemote git fetch -a origin (https://github.com/mdn/simple-web-worker.git)
+21 verbose correctMkdir /Users/qcgm1978/.cnpm/_git-remotes correctMkdir not in flight; initializing
+22 verbose setPermissions git+https://github.com/mdn/simple-web-worker.git set permissions on /Users/qcgm1978/.cnpm/_git-remotes/https-github-com-mdn-simple-web-worker-git-34b48378
+23 verbose resolveHead git+https://github.com/mdn/simple-web-worker.git original treeish: master
+24 info git [ 'rev-list', '-n1', 'master' ]
+25 silly resolveHead git+https://github.com/mdn/simple-web-worker.git resolved treeish: c9dbe4434be6bb99804ebff6b1d76a316a0dd92a
+26 verbose resolveHead git+https://github.com/mdn/simple-web-worker.git resolved Git URL: git+https://github.com/mdn/simple-web-worker.git#c9dbe4434be6bb99804ebff6b1d76a316a0dd92a
+27 silly resolveHead Git working directory: /var/folders/d1/zt67_99s5xj9spfdqtjhpx4h0000gn/T/npm-32286-b05e3a07/git-cache-998b41c0c6bd/c9dbe4434be6bb99804ebff6b1d76a316a0dd92a
+28 info git [ 'clone',
+28 info git   '/Users/qcgm1978/.cnpm/_git-remotes/https-github-com-mdn-simple-web-worker-git-34b48378',
+28 info git   '/var/folders/d1/zt67_99s5xj9spfdqtjhpx4h0000gn/T/npm-32286-b05e3a07/git-cache-998b41c0c6bd/c9dbe4434be6bb99804ebff6b1d76a316a0dd92a' ]
+29 verbose cloneResolved git+https://github.com/mdn/simple-web-worker.git clone Cloning into '/var/folders/d1/zt67_99s5xj9spfdqtjhpx4h0000gn/T/npm-32286-b05e3a07/git-cache-998b41c0c6bd/c9dbe4434be6bb99804ebff6b1d76a316a0dd92a'...
+29 verbose cloneResolved done.
+30 info git [ 'checkout', 'c9dbe4434be6bb99804ebff6b1d76a316a0dd92a' ]
+31 verbose checkoutTreeish git+https://github.com/mdn/simple-web-worker.git checkout Note: checking out 'c9dbe4434be6bb99804ebff6b1d76a316a0dd92a'.
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+31 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+31 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+31 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish   git checkout -b <new-branch-name>
+31 verbose checkoutTreeish
+31 verbose checkoutTreeish HEAD is now at c9dbe44... initial repo population
+32 error addLocal Could not install /var/folders/d1/zt67_99s5xj9spfdqtjhpx4h0000gn/T/npm-32286-b05e3a07/git-cache-998b41c0c6bd/c9dbe4434be6bb99804ebff6b1d76a316a0dd92a
+33 verbose stack Error: EISDIR: illegal operation on a directory, read
+34 verbose cwd /Users/qcgm1978/WebstormProjects/tfjs-models
+35 error Darwin 17.5.0
+36 error argv "/usr/local/bin/node" "/usr/local/lib/node_modules/cnpm/node_modules/.bin/npm" "--userconfig=/Users/qcgm1978/.cnpmrc" "--disturl=https://npm.taobao.org/mirrors/node" "--cache=/Users/qcgm1978/.cnpm" "--registry=https://registry.npm.taobao.org" "--node-gyp=/usr/local/lib/node_modules/cnpm/node_modules/node-gyp/bin/node-gyp.js" "i" "https://github.com/mdn/simple-web-worker.git" "-D"
+37 error node v9.8.0
+38 error npm  v2.14.20
+39 error code EISDIR
+40 error errno -21
+41 error syscall read
+42 error eisdir EISDIR: illegal operation on a directory, read
+42 error eisdir This is most likely not a problem with npm itself
+42 error eisdir and is related to npm not being able to find a package.json in
+42 error eisdir a package you are trying to install.
+43 verbose exit [ -21, true ]

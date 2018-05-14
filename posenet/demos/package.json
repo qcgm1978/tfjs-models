@@ -31,7 +31,7 @@
     "build": "NODE_ENV=production parcel build index.html  --no-minify --public-url ./",
     "build-camera": "NODE_ENV=production parcel build camera.html  --no-minify --public-url ./",
     "lint": "eslint .",
-    "test": "sudo node node_modules/.bin/jest --runInBand  --watch"
+    "test": "sudo node --inspect=7000 node_modules/.bin/jest --runInBand  --watch"
   },
   "devDependencies": {
     "@types/es6-promise": "^3.3.0",

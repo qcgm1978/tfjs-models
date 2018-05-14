@@ -2,7 +2,28 @@ import { bindPage } from '../coco.js'
 import { expectArraysClose } from '@tensorflow/tfjs-core/dist/test_util';
 // import { assertValidOutputStride, assertValidScaleFactor, MobileNet, MobileNetMultiplier, OutputStride } from '../../src/mobilenet';
 // import * as posenet from '../../src';
+it(`The Object.keys() method returns an array of a given object's property names, in the same order as we get with a normal loop.`, () => {
+  // simple array
+  var arr = ['a', 'b', 'c'];
+  expect(Object.keys(arr)).toEqual(['0', '1', '2']);
 
+
+  var obj = { 0: 'a', 1: 'b', 2: 'c' };
+  expect(Object.keys(obj)).toEqual(['0', '1', '2']);
+
+
+  var anObj = { 100: 'a', 2: 'b', 7: 'c' };
+  expect(Object.keys(anObj)).toEqual(['2', '7', '100']);
+
+  // getFoo is a property which isn't enumerable
+  var myObj = Object.create({}, {
+    getFoo: {
+      value: function () { return this.foo; }
+    }
+  });
+  myObj.foo = 1;
+  expect(Object.keys(myObj)).toEqual(['foo']);
+});
 it(`The async function declaration defines an asynchronous function, which returns an AsyncFunction object.`, (done) => {
   function resolveAfter2Seconds() {
     return new Promise(resolve => {
